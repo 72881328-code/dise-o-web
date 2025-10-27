@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="David Tito Cruz">
+  <meta name="description" content="Página web básica con HTML5 y CSS3 colorida">
+  <title>Mi Primera Página Web</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body>
+  <header>
+    <h1>🌈 Bienvenido a Mi Página Web</h1>
+    <p class="intro">Estidiante de la Escuela Profesional de Ingeneria de Sistemas e Informatica</em>.</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Más sobre HTML</a></li>
+      </ul>
+    </nav>
+
+    <img src="img/logo02.png" 
+         alt="Diseño web colorido" width="150" height="150">
+  </header>
+
+
+  <section id="sobre-mi" class="caja">
+    <h2>👤 Sobre mí</h2>
+    <img src="img/cara.jpg" 
+         alt="Foto de perfil" 
+         style="width: 150px; border-radius: 50%; display: block; margin: 0 auto 15px auto; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
+    <p>Mi nombre es <span class="resaltado">David</span> y soy un estudiante apasionado por el desarrollo web. 
+    Me encanta aprender sobre <u>HTML, CSS y JavaScript</u> para crear sitios modernos y responsivos.</p>
+
+    <p>Algunas de mis cualidades personales son:</p>
+    <ul>
+      <li>Responsable</li>
+      <li>Creativo</li>
+      <li>Curioso por la tecnología</li>
+    </ul>
+  </section>
+
+  
+  <section id="hobbies" class="caja">
+    <h2>🎮 Mis Hobbies</h2>
+    <div style="text-align:center;">
+      <img src="img/videojuegos.jpg" 
+           alt="Videojuegos y programación" 
+           style="width: 80%; max-width: 500px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    </div>
+    <p>Mis pasatiempos favoritos son:</p>
+    <ol>
+      <li>Los Videojuegos</li>
+      <li>Practicar programación</li>
+      <li>Escuchar música</li>
+      <li>Salir a caminar</li>
+    </ol>
+
+    <p>También puedes ver <a href="#contacto">cómo contactarme</a> si compartes alguno de estos intereses.</p>
+  </section>
+
+
+  <section id="contacto" class="caja">
+    <h2>📧 Contacto</h2>
+    <img src="img/puf.gif" 
+         alt="Icono de correo electrónico" 
+         style="width: 120px; display: block; margin: 0 auto 15px auto;">
+    <p>Si deseas contactarme, envíame un correo a 
+      <a href="mailto:david@example.com">david@example.com</a>.
+    </p>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 - Mi Página Web | Diseñada con 💙 por David</p>
+  </footer>
+</body>
+</html>
