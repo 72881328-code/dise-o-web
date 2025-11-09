@@ -1,82 +1,535 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="David Tito Cruz">
-  <meta name="description" content="Página web básica con HTML5 y CSS3 colorida">
-  <title>Mi Primera Página Web</title>
-  <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Tito Cruz">
+    <meta name="description" content="Portafolio personal con diseño avanzado en HTML5 y CSS3">
+    <meta name="keywords" content="desarrollo web, portafolio, HTML5, CSS3, diseño responsive">
+    <title>Portafolio | David Tito</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
-
 <body>
-  <header>
-    <h1>🌈 Bienvenido a Mi Página Web</h1>
-    <p class="intro">Estidiante de la Escuela Profesional de Ingeneria de Sistemas e Informatica</em>.</p>
-    <nav>
-      <ul class="menu">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Más sobre HTML</a></li>
-      </ul>
+    <!-- Partículas de fondo -->
+    <div class="particles"></div>
+
+    <!-- Navegación -->
+    <nav class="nav-container" id="navbar">
+        <div class="nav">
+            <div class="logo">DavidTito</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#tablas" class="nav-link">Tablas</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <img src="img/logo02.png" 
-         alt="Diseño web colorido" width="150" height="150">
-  </header>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title">David Tito Cruz</h1>
+            <p class="hero-subtitle">Desarrollador Web & Estudiante de Ingeniería de Sistemas</p>
+            <div class="hero-image">
+                <img src="img/cara.jpg" alt="David Tito - Desarrollador Web" class="hero-img">
+            </div>
+            <div class="cta-buttons">
+                <button class="submit-btn pulse" style="width: auto; margin: 0.5rem;">Ver Proyectos</button>
+                <button class="submit-btn" style="width: auto; margin: 0.5rem; background: transparent; border: 2px solid white;">Descargar CV</button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sobre Mí -->
+    <section class="section" id="sobre-mi">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="img/puf.gif" alt="David Tito - Perfil" class="profile-img">
+            </div>
+            <div class="about-text">
+                <p>Soy un apasionado desarrollador web con especial interés en crear experiencias digitales innovadoras y funcionales. Mi enfoque combina creatividad y técnica para desarrollar soluciones que impacten positivamente.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="card-title">Formación</h3>
+                        <p>Estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental. Apasionado por el desarrollo web y las nuevas tecnologías.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="card-title">Desarrollo</h3>
+                        <p>Especializado en crear experiencias web modernas y responsivas utilizando las últimas tecnologías como HTML5, CSS3 y JavaScript.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="card-title">Innovación</h3>
+                        <p>Siempre buscando aprender nuevas tecnologías y metodologías para crear soluciones innovadoras y eficientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="sobre-mi" class="caja">
-    <h2>👤 Sobre mí</h2>
-    <img src="img/cara.jpg" 
-         alt="Foto de perfil" 
-         style="width: 150px; border-radius: 50%; display: block; margin: 0 auto 15px auto; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
-    <p>Mi nombre es <span class="resaltado">David</span> y soy un estudiante apasionado por el desarrollo web. 
-    Me encanta aprender sobre <u>HTML, CSS y JavaScript</u> para crear sitios modernos y responsivos.</p>
+    <!-- Habilidades -->
+    <section class="section" id="habilidades">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-content">
+            <div class="skills-image">
+                <img src="img/skills.jpg" alt="Habilidades Técnicas" class="skills-img">
+            </div>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML5 & CSS3</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 82%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Diseño Responsive</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Base de Datos</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>Algunas de mis cualidades personales son:</p>
-    <ul>
-      <li>Responsable</li>
-      <li>Creativo</li>
-      <li>Curioso por la tecnología</li>
-    </ul>
-  </section>
+    <!-- Proyectos -->
+    <section class="section" id="proyectos">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/logo02.png" alt="E-commerce Moderno" class="project-img">
+                    <div class="project-overlay">
+                        <h4>Ver Detalles</h4>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Moderno</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <p>Plataforma de comercio electrónico con carrito de compras, pasarela de pago y panel administrativo.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Demo</a>
+                        <a href="#" class="project-link">Código</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/logo02.png" alt="App de Tareas" class="project-img">
+                    <div class="project-overlay">
+                        <h4>Ver Detalles</h4>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">App de Tareas</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">PWA</span>
+                    </div>
+                    <p>Aplicación web progresiva para gestión de tareas con sincronización en tiempo real.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Demo</a>
+                        <a href="#" class="project-link">Código</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/logo02.png" alt="Portafolio Personal" class="project-img">
+                    <div class="project-overlay">
+                        <h4>Ver Detalles</h4>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Portafolio Personal</h3>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <p>Sitio web personal responsive con diseño moderno y animaciones CSS avanzadas.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Demo</a>
+                        <a href="#" class="project-link">Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-  <section id="hobbies" class="caja">
-    <h2>🎮 Mis Hobbies</h2>
-    <div style="text-align:center;">
-      <img src="img/videojuegos.jpg" 
-           alt="Videojuegos y programación" 
-           style="width: 80%; max-width: 500px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-    </div>
-    <p>Mis pasatiempos favoritos son:</p>
-    <ol>
-      <li>Los Videojuegos</li>
-      <li>Practicar programación</li>
-      <li>Escuchar música</li>
-      <li>Salir a caminar</li>
-    </ol>
+    <!-- Sección de Tablas -->
+    <section class="section" id="tablas">
+        <h2 class="section-title">Tablas de Información</h2>
+        
+        <!-- Tabla de Tecnologías -->
+        <div class="table-container">
+            <h3 class="table-subtitle">Tecnologías que Manejo</h3>
+            <div class="table-image">
+                <img src="img/uso.jpg" alt="Tecnologías" class="table-img">
+            </div>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Años de Experiencia</th>
+                        <th>Proyectos</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Avanzado</td>
+                        <td>3</td>
+                        <td>15</td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Avanzado</td>
+                        <td>3</td>
+                        <td>15</td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermedio-Avanzado</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Intermedio</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td><span class="status learning">Aprendiendo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermedio</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td><span class="status active">Activo</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <p>También puedes ver <a href="#contacto">cómo contactarme</a> si compartes alguno de estos intereses.</p>
-  </section>
+        <!-- Tabla de Cursos -->
+        <div class="table-container">
+            <h3 class="table-subtitle">Cursos Realizados</h3>
+            <div class="table-image">
+                <img src="img/cursos.jpg" alt="Cursos" class="table-img">
+            </div>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Institución</th>
+                        <th>Duración</th>
+                        <th>Fecha</th>
+                        <th>Certificado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desarrollo Web Full Stack</td>
+                        <td>Platzi</td>
+                        <td>6 meses</td>
+                        <td>2023</td>
+                        <td><span class="status completed">Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Moderno</td>
+                        <td>Udemy</td>
+                        <td>3 meses</td>
+                        <td>2023</td>
+                        <td><span class="status completed">Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td>React desde Cero</td>
+                        <td>Coursera</td>
+                        <td>4 meses</td>
+                        <td>2024</td>
+                        <td><span class="status in-progress">En Progreso</span></td>
+                    </tr>
+                    <tr>
+                        <td>Base de Datos SQL</td>
+                        <td>edX</td>
+                        <td>2 meses</td>
+                        <td>2022</td>
+                        <td><span class="status completed">Completado</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
+    <!-- Galería de Imágenes -->
+    <section class="section" id="galeria">
+        <h2 class="section-title">Galería Multimedia</h2>
+        
+        <div class="gallery-container">
+            <!-- Imagen con figure y figcaption -->
+            <figure class="gallery-item">
+                <img src="img/logo02.png" alt="Diseño Web Moderno" class="gallery-img">
+                <figcaption class="gallery-caption">Diseño Web Responsive - Proyectos innovadores</figcaption>
+            </figure>
 
-  <section id="contacto" class="caja">
-    <h2>📧 Contacto</h2>
-    <img src="img/puf.gif" 
-         alt="Icono de correo electrónico" 
-         style="width: 120px; display: block; margin: 0 auto 15px auto;">
-    <p>Si deseas contactarme, envíame un correo a 
-      <a href="mailto:david@example.com">david@example.com</a>.
-    </p>
-  </section>
+            <!-- Imagen con mapas interactivos -->
+            <figure class="gallery-item">
+                <img src="img/logo02.png" alt="Tecnologías Web" usemap="#tecnologias-map" class="gallery-img interactive-img">
+                <map name="tecnologias-map">
+                    <area shape="rect" coords="0,0,150,150" href="#html" alt="HTML5" title="HTML5 - Lenguaje de marcado">
+                    <area shape="rect" coords="150,0,300,150" href="#css" alt="CSS3" title="CSS3 - Estilos y diseño">
+                    <area shape="rect" coords="0,150,150,300" href="#js" alt="JavaScript" title="JavaScript - Interactividad">
+                    <area shape="rect" coords="150,150,300,300" href="#react" alt="React" title="React - Biblioteca JavaScript">
+                </map>
+                <figcaption class="gallery-caption">Tecnologías que Utilizo (Click en áreas interactivas)</figcaption>
+            </figure>
 
-  
-  <footer>
-    <p>&copy; 2025 - Mi Página Web | Diseñada con 💙 por David</p>
-  </footer>
+            <!-- Imagen adaptativa con picture -->
+            <figure class="gallery-item">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo02.png">
+                    <source media="(min-width: 768px)" srcset="img/logo02.png">
+                    <img src="img/logo02.png" alt="Proyecto Adaptativo" class="gallery-img">
+                </picture>
+                <figcaption class="gallery-caption">Imagen Adaptativa para Diferentes Dispositivos</figcaption>
+            </figure>
+
+            <!-- Imagen con filtros CSS -->
+            <figure class="gallery-item">
+                <img src="img/logo02.png" alt="Efectos CSS" class="gallery-img css-filter">
+                <figcaption class="gallery-caption">Efectos CSS Aplicados - Filtros y transformaciones</figcaption>
+            </figure>
+
+            <!-- Imagen con hover effects -->
+            <figure class="gallery-item">
+                <div class="image-hover-container">
+                    <img src="img/logo02.png" alt="Efectos Hover" class="gallery-img hover-effect">
+                    <div class="hover-content">
+                        <h4>Efecto Hover</h4>
+                        <p>Interacción avanzada con CSS</p>
+                    </div>
+                </div>
+                <figcaption class="gallery-caption">Efectos Hover Avanzados</figcaption>
+            </figure>
+
+            <!-- SVG Personalizado -->
+            <figure class="gallery-item">
+                <svg width="300" height="200" viewBox="0 0 300 200" class="svg-custom">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#6366f1" />
+                            <stop offset="50%" stop-color="#8b5cf6" />
+                            <stop offset="100%" stop-color="#f59e0b" />
+                        </linearGradient>
+                        <pattern id="logoPattern" x="0" y="0" width="0.1" height="0.1">
+                            <image href="img/logo02.png" x="0" y="0" width="300" height="200" />
+                        </pattern>
+                    </defs>
+                    <rect x="10" y="10" width="280" height="180" rx="15" fill="url(#grad1)" class="svg-animado"/>
+                    <rect x="20" y="20" width="260" height="160" rx="10" fill="url(#logoPattern)" opacity="0.8"/>
+                    <text x="150" y="160" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">
+                        SVG con Logo
+                    </text>
+                </svg>
+                <figcaption class="gallery-caption">SVG Animado con Integración de Logo</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="img/videojuegos.jpg" alt="Contacto" class="contact-img">
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder=" " required>
+                    <label class="form-label">Nombre Completo</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder=" " required>
+                    <label class="form-label">Correo Electrónico</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder=" " required>
+                    <label class="form-label">Asunto</label>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-input" placeholder=" " rows="5" required></textarea>
+                    <label class="form-label">Mensaje</label>
+                </div>
+                <button type="submit" class="submit-btn glow">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="img/group.jpg" alt="David Tito Logo" class="footer-img" width="100" height="100">
+                </div>
+                <h3>David Ttito</h3>
+                <p>Desarrollador web apasionado por crear experiencias digitales excepcionales.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio" style="color: #94a3b8; text-decoration: none;">Inicio</a></li>
+                    <li><a href="#sobre-mi" style="color: #94a3b8; text-decoration: none;">Sobre Mí</a></li>
+                    <li><a href="#habilidades" style="color: #94a3b8; text-decoration: none;">Habilidades</a></li>
+                    <li><a href="#proyectos" style="color: #94a3b8; text-decoration: none;">Proyectos</a></li>
+                    <li><a href="#tablas" style="color: #94a3b8; text-decoration: none;">Tablas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> 72881328@Continental.edu.pe</p>
+                <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cusco, Perú</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 David Ttito Cruz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante -->
+    <button class="floating-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Navegación sticky
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Animación de habilidades al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        });
+
+        document.querySelectorAll('.skill-progress').forEach(skill => {
+            skill.style.animationPlayState = 'paused';
+            observer.observe(skill);
+        });
+
+        // Animación SVG
+        document.querySelectorAll('.svg-animado').forEach(svg => {
+            svg.style.animationPlayState = 'paused';
+            observer.observe(svg);
+        });
+
+        // Efectos interactivos para imágenes con mapas
+        document.querySelectorAll('area').forEach(area => {
+            area.addEventListener('mouseenter', function() {
+                this.style.cursor = 'pointer';
+            });
+        });
+    </script>
 </body>
 </html>
