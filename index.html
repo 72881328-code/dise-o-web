@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <!-- Partículas de fondo -->
     <div class="particles"></div>
 
-    <!-- Navegación -->
     <nav class="nav-container" id="navbar">
         <div class="nav">
             <div class="logo">DavidTito</div>
@@ -30,7 +28,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="hero-content">
             <h1 class="hero-title">David Tito Cruz</h1>
@@ -45,7 +42,6 @@
         </div>
     </section>
 
-    <!-- Sobre Mí -->
     <section class="section" id="sobre-mi">
         <h2 class="section-title">Sobre Mí</h2>
         <div class="about-content">
@@ -82,7 +78,6 @@
         </div>
     </section>
 
-    <!-- Habilidades -->
     <section class="section" id="habilidades">
         <h2 class="section-title">Habilidades</h2>
         <div class="skills-content">
@@ -148,7 +143,7 @@
         </div>
     </section>
 
-    <!-- Proyectos -->
+ 
     <section class="section" id="proyectos">
         <h2 class="section-title">Proyectos Destacados</h2>
         <div class="projects-grid">
@@ -218,11 +213,11 @@
         </div>
     </section>
 
-    <!-- Sección de Tablas -->
+ 
     <section class="section" id="tablas">
         <h2 class="section-title">Tablas de Información</h2>
         
-        <!-- Tabla de Tecnologías -->
+ 
         <div class="table-container">
             <h3 class="table-subtitle">Tecnologías que Manejo</h3>
             <div class="table-image">
@@ -278,7 +273,7 @@
             </table>
         </div>
 
-        <!-- Tabla de Cursos -->
+  
         <div class="table-container">
             <h3 class="table-subtitle">Cursos Realizados</h3>
             <div class="table-image">
@@ -328,18 +323,17 @@
         </div>
     </section>
 
-    <!-- Galería de Imágenes -->
+
     <section class="section" id="galeria">
         <h2 class="section-title">Galería Multimedia</h2>
         
         <div class="gallery-container">
-            <!-- Imagen con figure y figcaption -->
+   
             <figure class="gallery-item">
                 <img src="img/logo02.png" alt="Diseño Web Moderno" class="gallery-img">
                 <figcaption class="gallery-caption">Diseño Web Responsive - Proyectos innovadores</figcaption>
             </figure>
 
-            <!-- Imagen con mapas interactivos -->
             <figure class="gallery-item">
                 <img src="img/logo02.png" alt="Tecnologías Web" usemap="#tecnologias-map" class="gallery-img interactive-img">
                 <map name="tecnologias-map">
@@ -351,7 +345,6 @@
                 <figcaption class="gallery-caption">Tecnologías que Utilizo (Click en áreas interactivas)</figcaption>
             </figure>
 
-            <!-- Imagen adaptativa con picture -->
             <figure class="gallery-item">
                 <picture>
                     <source media="(min-width: 1200px)" srcset="img/logo02.png">
@@ -361,13 +354,13 @@
                 <figcaption class="gallery-caption">Imagen Adaptativa para Diferentes Dispositivos</figcaption>
             </figure>
 
-            <!-- Imagen con filtros CSS -->
+
             <figure class="gallery-item">
                 <img src="img/logo02.png" alt="Efectos CSS" class="gallery-img css-filter">
                 <figcaption class="gallery-caption">Efectos CSS Aplicados - Filtros y transformaciones</figcaption>
             </figure>
 
-            <!-- Imagen con hover effects -->
+
             <figure class="gallery-item">
                 <div class="image-hover-container">
                     <img src="img/logo02.png" alt="Efectos Hover" class="gallery-img hover-effect">
@@ -379,7 +372,7 @@
                 <figcaption class="gallery-caption">Efectos Hover Avanzados</figcaption>
             </figure>
 
-            <!-- SVG Personalizado -->
+
             <figure class="gallery-item">
                 <svg width="300" height="200" viewBox="0 0 300 200" class="svg-custom">
                     <defs>
@@ -403,7 +396,7 @@
         </div>
     </section>
 
-    <!-- Contacto -->
+
     <section class="section" id="contacto">
         <h2 class="section-title">Contacto</h2>
         <div class="contact-content">
@@ -432,7 +425,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -470,13 +463,13 @@
         </div>
     </footer>
 
-    <!-- Botón flotante -->
+
     <button class="floating-btn" onclick="scrollToTop()">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script>
-        // Navegación sticky
+
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 100) {
@@ -486,7 +479,6 @@
             }
         });
 
-        // Scroll suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -496,7 +488,7 @@
             });
         });
 
-        // Scroll to top
+
         function scrollToTop() {
             window.scrollTo({
                 top: 0,
@@ -504,7 +496,7 @@
             });
         }
 
-        // Animación de habilidades al hacer scroll
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -518,13 +510,13 @@
             observer.observe(skill);
         });
 
-        // Animación SVG
+
         document.querySelectorAll('.svg-animado').forEach(svg => {
             svg.style.animationPlayState = 'paused';
             observer.observe(svg);
         });
 
-        // Efectos interactivos para imágenes con mapas
+
         document.querySelectorAll('area').forEach(area => {
             area.addEventListener('mouseenter', function() {
                 this.style.cursor = 'pointer';
