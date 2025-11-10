@@ -1,4 +1,4 @@
-/* Variables CSS */
+
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
@@ -15,7 +15,6 @@
     --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +33,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Partículas animadas */
 .particles {
     position: fixed;
     top: 0;
@@ -55,7 +53,6 @@ body {
     66% { transform: translate(20px, 20px) scale(0.98); }
 }
 
-/* Header mejorado */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -113,7 +110,6 @@ body {
     font-weight: 300;
 }
 
-/* Navegación mejorada */
 .nav-container {
     position: fixed;
     top: 0;
@@ -187,7 +183,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Secciones mejoradas */
 .section {
     padding: 6rem 2rem;
     max-width: 1200px;
@@ -217,7 +212,7 @@ body {
     border-radius: 2px;
 }
 
-/* Tarjetas mejoradas */
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -266,7 +261,6 @@ body {
     color: var(--dark);
 }
 
-/* Habilidades con barras animadas */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -314,7 +308,6 @@ body {
     to { transform: scaleX(1); }
 }
 
-/* Proyectos con efecto glassmorphism */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -382,7 +375,6 @@ body {
     font-weight: 600;
 }
 
-/* Tablas personalizadas */
 .table-container {
     margin: 3rem 0;
     background: white;
@@ -434,7 +426,6 @@ body {
     transition: var(--transition);
 }
 
-/* Estados de la tabla */
 .status {
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -463,7 +454,6 @@ body {
     color: #8b5cf6;
 }
 
-/* Galería de imágenes */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -505,7 +495,6 @@ body {
     border-top: 1px solid rgba(99, 102, 241, 0.1);
 }
 
-/* SVG personalizado */
 .svg-custom {
     width: 100%;
     height: 200px;
@@ -527,7 +516,6 @@ body {
     }
 }
 
-/* Formulario de contacto mejorado */
 .contact-form {
     max-width: 600px;
     margin: 3rem auto 0;
@@ -594,5 +582,3 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
 }
-
-/* Footer
